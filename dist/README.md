@@ -1,11 +1,11 @@
-# test
+# README Generator
 
   
   ![License](https://img.shields.io/badge/License-MIT-blue.svg)
   
   
   ## Description
-  test
+  Allows users to quickly and easily generate a README file by using a command-line application to generate one.
 
   ## Table of Contents
   - [Installation](#installation)
@@ -16,10 +16,10 @@
   - [Questions](#questions)
 
   ## Installation
-  test
+  npm i
 
   ## Usage
-  test
+  It is very helpful when you need to quickly generate a README file!
 
   
   ## License
@@ -27,11 +27,11 @@
   
 
   ## Contributing
-  test
+  Please follow the contributor covenant code of conduct.
 
   ## Tests
-  test
+  npm test
 
   ## Questions
-  GitHub: [test](https://github.com/test)
-  Email: <test>
+  GitHub: [emilyadarr](https://github.com/emilyadarr)
+  Email: <emilyadarr@gmail.com>
