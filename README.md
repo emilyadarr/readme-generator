@@ -1,3 +1,8 @@
-# Professional README Generator Starter Code
+# README Generator  
+  
+  ## Description
+  Allows users to quickly and easily generate a README file by using a command-line application to create one. This command-line application dynamically generates a professional README.md file from user's input using node.js.
 
-[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+  ## Questions
+  [emilyadarr](https://github.com/emilyadarr)
+  <emilyadarr@gmail.com>

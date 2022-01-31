@@ -39,7 +39,7 @@ function renderLicenseSection(license) {
   }
 
   return `
-  ## License <a name="license"></a>
+  ## License
   [${license}](${renderLicenseLink(license)})
   `;
 };
@@ -62,24 +62,25 @@ function generateMarkdown(inputData) {
   - [Tests](#tests)
   - [Questions](#questions)
 
-  ## Installation <a name="installation"></a>
+  ## Installation
   ${data.install}
 
-  ## Usage <a name="usage"></a>
+  ## Usage
   ${data.usage}
 
   ${renderLicenseSection(license)}
 
-  ## Contributing <a name="contributing"></a>
+  ## Contributing
   ${data.contribution}
 
-  ## Tests <a name="tests"></a>
+  ## Tests
   ${data.test}
 
-  ## Questions <a name="questions"></a>
-  [${data.username}](https://github.com/${data.username})
-  <${data.email}>
+  ## Questions
+  GitHub: [${data.username}](https://github.com/${data.username})
+  Email: <${data.email}>
 `;
 };
 
 module.exports = generateMarkdown;
+//<a name="installation"></a>

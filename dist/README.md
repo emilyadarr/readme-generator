@@ -1,11 +1,11 @@
-# testing links
+# README Generator
 
   
-  ![License](https://img.shields.io/badge/License-ISC_License-blue.svg)
+  ![License](https://img.shields.io/badge/License-MIT-blue.svg)
   
   
   ## Description
-  I don'tk know but im going ot write a lot so there is more space to skip over when testing the table of contents. It is so freaking cold outside. 
+  Allows users to quickly and easily generate a README file by using a command-line application to generate one.
 
   ## Table of Contents
   - [Installation](#installation)
@@ -15,23 +15,23 @@
   - [Tests](#tests)
   - [Questions](#questions)
 
-  ## Installation <a name="installation"></a>
-  install test
+  ## Installation
+  npm i
 
-  ## Usage <a name="usage"></a>
-  whatever. I'm over it
+  ## Usage
+  It's very helpful
 
   
-  ## License <a name="license"></a>
-  [ISC License](https://opensource.org/licenses/ISC)
+  ## License
+  [MIT](https://opensource.org/licenses/MIT)
   
 
-  ## Contributing <a name="contributing"></a>
-  whatever you want
+  ## Contributing
+  contributor covenant code of conduct
 
-  ## Tests <a name="tests"></a>
-  test test test 
+  ## Tests
+  npm test
 
-  ## Questions <a name="questions"></a>
-  [emilyadarr](https://github.com/emilyadarr)
-  <emilyadarr@gmail.com>
+  ## Questions
+  GitHub: [emilyadarr](https://github.com/emilyadarr)
+  Email: <emilyadarr@gmail.com>

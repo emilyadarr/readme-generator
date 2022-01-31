@@ -2,10 +2,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js');
-//const { reject } = require('lodash');
-//const { resolve } = require('path/posix');
-// const generateMarkdown = require('./utils/generateMarkdown.js');
-
 
 // TODO: Create an array of questions for user input
 const questions = () => {
@@ -57,13 +53,9 @@ const questions = () => {
       message: 'What does the user need to know about using this repo?'
     }
   ])
-  // .then(data => {
-  //   console.log(data);
-  // });
 };
 
 // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
 const writeFile = fileContent => {
   return new Promise((resolve, reject) => {
     fs.writeFile('./dist/README.md', fileContent, err => {
@@ -81,14 +73,7 @@ const writeFile = fileContent => {
 };
 
 // TODO: Create a function to initialize app
-//function init() {}
-
-// Function call to initialize app
-//init();
 questions()
-  // .then(data => {
-  //   return renderlicenseBadge(data);
-  // })
   .then(data => {
    return generateMarkdown(data);
  })
