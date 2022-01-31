@@ -81,7 +81,7 @@ questions()
    return writeFile(pageREADME);
  })
  .then(writeFileResponse => {
-   console.log(writeFileResponse);
+   console.log(writeFileResponse.message);
  })
  .catch(err => {
    console.log(err);
