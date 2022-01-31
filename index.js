@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
-const generateMarkdown = require('./utils/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 //const { reject } = require('lodash');
 //const { resolve } = require('path/posix');
 // const generateMarkdown = require('./utils/generateMarkdown.js');
@@ -22,7 +22,7 @@ const questions = () => {
     },
     {
       type: 'input',
-      name: 'projectName',
+      name: 'title',
       message: 'What is your project name?'
     },
     {
@@ -34,12 +34,17 @@ const questions = () => {
       type: 'list',
       name: 'license',
       message: 'What kind of license should your project have?',
-      choices: ['MIT', 'GNU GPLv3', 'Apache License 2.0', 'ISC License']
+      choices: ['MIT', 'GNU GPLv3', 'Apache License 2.0', 'ISC License'],
     },
     {
       type: 'input',
       name: 'install',
       message: 'What command should be run to install dependencies?'
+    },
+    {
+      type: 'input',
+      name: 'contribution',
+      message: 'What are the contribution guidelines?'
     },
     {
       type: 'input',
@@ -52,16 +57,16 @@ const questions = () => {
       message: 'What does the user need to know about using this repo?'
     }
   ])
-  .then(inputData => {
-    console.log(inputData);
-  });
+  // .then(data => {
+  //   console.log(data);
+  // });
 };
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// function writeToFile(fileName, data) {}
 const writeFile = fileContent => {
   return new Promise((resolve, reject) => {
-    fs.writeFile('./README.md', fileContent, err => {
+    fs.writeFile('./dist/README.md', fileContent, err => {
       if (err) {
         reject(err);
         return;
@@ -76,20 +81,23 @@ const writeFile = fileContent => {
 };
 
 // TODO: Create a function to initialize app
-function init() {}
+//function init() {}
 
 // Function call to initialize app
 //init();
 questions()
-// .then(inputData => {
-//   return generateMarkdown(inputData);
-// })
-// .then(pageREADME => {
-//   return writeFile(pageREADME);
-// })
-// .then(writeFileResponse => {
-//   console.log(writeFileResponse);
-// })
-// .catch(err => {
-//   console.log(err);
-// })
+  // .then(data => {
+  //   return renderlicenseBadge(data);
+  // })
+  .then(data => {
+   return generateMarkdown(data);
+ })
+ .then(pageREADME => {
+   return writeFile(pageREADME);
+ })
+ .then(writeFileResponse => {
+   console.log(writeFileResponse);
+ })
+ .catch(err => {
+   console.log(err);
+ });
